@@ -11,6 +11,12 @@ import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component';
 //import { ChartsModule } from './charts/charts.module';  //delayloading
 import { LoginGuard } from './login.guard';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { ClassComponent } from './forms/class/class.component';
+import { ReactiveComponent } from './forms/reactive/reactive.component';
+import { BlockComponent } from './block/block.component';
+import { BtnNumberPlusDirective } from './btn-number-plus.directive';
+
 
 
 @NgModule({
@@ -22,10 +28,16 @@ import { LoginGuard } from './login.guard';
     DashboardComponent,
     LoginComponent,
     LayoutComponent,
+    ClassComponent,
+    ReactiveComponent,
+    BlockComponent,
+    BtnNumberPlusDirective
 
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
    // ChartsModule, //delayloading
     AppRoutingModule
   ],

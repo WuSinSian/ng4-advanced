@@ -1,5 +1,5 @@
 import {ActivatedRoute, Router} from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
@@ -29,7 +29,6 @@ export class CardsComponent implements OnInit {
       this.p1 = params['page'];
       this.p2 = params['test'];
     })
-
   }
 
   goCard(num){
@@ -38,4 +37,10 @@ export class CardsComponent implements OnInit {
     // this.router.navigate([,'cards',parseInt(this.type) + num]); 無加 "/" 也可以
   }
 
+  @HostListener('click', ['$event.target'])
+  plus1(btn:HTMLButtonElement){
+    let num = +btn.innerText;
+    num ++;
+    btn.innerText = num.toString();
+  }
 }

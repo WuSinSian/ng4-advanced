@@ -50,8 +50,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-sm-6 col-xs-12">
+              <div class="row">
+
+                  <!--<div class="col-sm-6 col-xs-12">
                     <div class="card">
                       <div class="card-item"><img src="assets/img/pic5.jpg" alt="MaterialImg" class="fw img-responsive">
                         <div class="card-item-text text-right">Paracosm</div>
@@ -66,7 +67,16 @@
                         <p class="m0"><span class="mr-sm text-muted">by</span><a href="#">John</a></p>
                       </div>
                     </div>
-                  </div>
+                  </div>-->
+
+                  <app-block>
+                      <div class="card-offset">
+                        <div class="card-offset-item text-left">
+                          <!--<button #btn type="button" class="btn-raised btn btn-primary btn-circle btn-lg" (click)="plus1($event.target)" >25</button>-->
+                          <button #btn type="button" class="btn-raised btn btn-primary btn-circle btn-lg" btn-plus1 >25</button>
+                        </div>
+                      </div>
+                  </app-block>
                   <div class="col-sm-6 col-xs-12">
                     <div class="card">
                       <div class="card-item"><img src="assets/img/pic4.jpg" alt="MaterialImg" class="fw img-responsive">
@@ -85,6 +95,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="col-lg-4 col-xs-12">
                 <div class="card">
                   <div class="card-item"><img src="assets/img/pic1.jpg" alt="MaterialImg" class="fw img-responsive">
